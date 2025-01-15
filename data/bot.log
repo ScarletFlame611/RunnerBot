@@ -5597,3 +5597,198 @@ TypeError: handle_errors() missing 1 required positional argument: 'exception'
 2025-01-15 02:03:47,600 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
 2025-01-15 02:03:47,600 - aiogram.dispatcher - INFO - Polling stopped
 2025-01-15 02:03:47,863 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 15:09:18,388 - __main__ - INFO - Запуск main()
+2025-01-15 15:09:18,542 - __main__ - INFO - Инициализация базы данных
+2025-01-15 15:09:18,635 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 15:09:18,646 - __main__ - INFO - Подключение middleware
+2025-01-15 15:09:18,646 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 15:09:18,646 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 15:09:18,648 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 15:09:20,586 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:09:49,137 - bot.handlers.start - INFO - Пользователь 6453533068 вызвал команду /start
+2025-01-15 15:09:50,876 - aiogram.event - INFO - Update id=785581978 is handled. Duration 1734 ms by bot id=7987337779
+2025-01-15 15:09:58,211 - aiogram.event - INFO - Update id=785581979 is handled. Duration 1827 ms by bot id=7987337779
+2025-01-15 15:10:12,027 - aiogram.event - INFO - Update id=785581980 is handled. Duration 1827 ms by bot id=7987337779
+2025-01-15 15:10:26,553 - aiogram.event - INFO - Update id=785581981 is handled. Duration 405 ms by bot id=7987337779
+2025-01-15 15:10:31,161 - aiogram.event - INFO - Update id=785581982 is handled. Duration 390 ms by bot id=7987337779
+2025-01-15 15:10:40,764 - aiogram.event - INFO - Update id=785581983 is handled. Duration 1577 ms by bot id=7987337779
+2025-01-15 15:10:57,659 - aiogram.event - INFO - Update id=785581984 is handled. Duration 5047 ms by bot id=7987337779
+2025-01-15 15:10:58,187 - bot.handlers.start - INFO - Пользователь 6453533068 успешно зарегистрировался
+2025-01-15 15:10:59,732 - aiogram.event - INFO - Update id=785581985 is handled. Duration 1780 ms by bot id=7987337779
+2025-01-15 15:11:31,114 - aiogram.event - INFO - Update id=785581987 is handled. Duration 1827 ms by bot id=7987337779
+2025-01-15 15:12:04,698 - aiogram.event - INFO - Update id=785581988 is handled. Duration 27266 ms by bot id=7987337779
+2025-01-15 15:12:05,459 - aiogram.event - INFO - Update id=785581986 is not handled. Duration 60546 ms by bot id=7987337779
+2025-01-15 15:12:05,459 - aiogram.event - ERROR - Cause exception while process update id=785581986 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\streams.py", line 671, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 181, in make_request
+    async with session.post(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\client.py", line 730, in _request
+    await resp.start(conn)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\client_reqrep.py", line 1074, in start
+    self._continue = None
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiohttp\helpers.py", line 671, in __exit__
+    raise asyncio.TimeoutError from exc_val
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\menu.py", line 42, in menu_command
+    await message.answer_photo(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\client\bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 186, in make_request
+    raise TelegramNetworkError(method=method, message="Request timeout error")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - Request timeout error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 15:12:21,451 - aiogram.event - INFO - Update id=785581989 is handled. Duration 17156 ms by bot id=7987337779
+2025-01-15 15:12:35,225 - aiogram.event - INFO - Update id=785581990 is handled. Duration 484 ms by bot id=7987337779
+2025-01-15 15:12:38,001 - aiogram.event - INFO - Update id=785581991 is handled. Duration 1702 ms by bot id=7987337779
+2025-01-15 15:12:48,597 - aiogram.event - INFO - Update id=785581992 is handled. Duration 296 ms by bot id=7987337779
+2025-01-15 15:12:50,518 - aiogram.event - INFO - Update id=785581993 is handled. Duration 718 ms by bot id=7987337779
+2025-01-15 15:12:52,090 - aiogram.event - INFO - Update id=785581994 is handled. Duration 764 ms by bot id=7987337779
+2025-01-15 15:12:54,360 - aiogram.event - INFO - Update id=785581995 is handled. Duration 280 ms by bot id=7987337779
+2025-01-15 15:12:56,142 - aiogram.event - INFO - Update id=785581996 is handled. Duration 547 ms by bot id=7987337779
+2025-01-15 15:12:58,735 - aiogram.event - INFO - Update id=785581997 is handled. Duration 1750 ms by bot id=7987337779
+2025-01-15 15:13:12,612 - aiogram.event - INFO - Update id=785581998 is handled. Duration 11875 ms by bot id=7987337779
+2025-01-15 15:13:45,929 - aiogram.event - INFO - Update id=785581999 is handled. Duration 858 ms by bot id=7987337779
+2025-01-15 15:13:47,246 - aiogram.event - INFO - Update id=785582000 is handled. Duration 281 ms by bot id=7987337779
+2025-01-15 15:13:50,156 - aiogram.event - INFO - Update id=785582001 is handled. Duration 297 ms by bot id=7987337779
+2025-01-15 15:13:56,703 - aiogram.event - INFO - Update id=785582002 is handled. Duration 1172 ms by bot id=7987337779
+2025-01-15 15:14:03,304 - aiogram.event - INFO - Update id=785582003 is handled. Duration 672 ms by bot id=7987337779
+2025-01-15 15:14:06,677 - aiogram.event - INFO - Update id=785582004 is handled. Duration 344 ms by bot id=7987337779
+2025-01-15 15:14:12,519 - aiogram.event - INFO - Update id=785582005 is handled. Duration 1422 ms by bot id=7987337779
+2025-01-15 15:22:36,946 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:22:36,946 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 15:22:37,209 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 15:30:08,794 - __main__ - INFO - Запуск main()
+2025-01-15 15:30:08,841 - __main__ - INFO - Инициализация базы данных
+2025-01-15 15:30:08,884 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 15:30:08,895 - __main__ - INFO - Подключение middleware
+2025-01-15 15:30:08,895 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 15:30:08,895 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 15:30:08,896 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 15:30:10,625 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:30:36,715 - aiogram.event - INFO - Update id=785582006 is handled. Duration 2561 ms by bot id=7987337779
+2025-01-15 15:30:38,306 - bot.handlers.start - INFO - Пользователь 6453533068 вызвал команду /start
+2025-01-15 15:30:38,718 - aiogram.event - INFO - Update id=785582007 is handled. Duration 405 ms by bot id=7987337779
+2025-01-15 15:30:44,557 - aiogram.event - INFO - Update id=785582008 is handled. Duration 312 ms by bot id=7987337779
+2025-01-15 15:30:49,936 - aiogram.event - INFO - Update id=785582009 is handled. Duration 280 ms by bot id=7987337779
+2025-01-15 15:30:55,208 - aiogram.event - INFO - Update id=785582010 is handled. Duration 405 ms by bot id=7987337779
+2025-01-15 15:31:30,591 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 15:31:30,592 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:31:30,846 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 15:31:45,837 - __main__ - INFO - Запуск main()
+2025-01-15 15:31:45,838 - __main__ - INFO - Инициализация базы данных
+2025-01-15 15:31:45,839 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 15:31:45,850 - __main__ - INFO - Подключение middleware
+2025-01-15 15:31:45,850 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 15:31:45,850 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 15:31:45,850 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 15:31:46,699 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:31:50,852 - aiogram.event - INFO - Update id=785582011 is handled. Duration 844 ms by bot id=7987337779
+2025-01-15 15:31:53,004 - bot.handlers.start - INFO - Пользователь 6453533068 вызвал команду /start
+2025-01-15 15:31:53,251 - aiogram.event - INFO - Update id=785582012 is handled. Duration 250 ms by bot id=7987337779
+2025-01-15 15:31:59,363 - aiogram.event - INFO - Update id=785582013 is handled. Duration 250 ms by bot id=7987337779
+2025-01-15 15:32:03,732 - aiogram.event - INFO - Update id=785582014 is handled. Duration 359 ms by bot id=7987337779
+2025-01-15 15:32:09,697 - aiogram.event - INFO - Update id=785582015 is handled. Duration 344 ms by bot id=7987337779
+2025-01-15 15:32:12,983 - aiogram.event - INFO - Update id=785582016 is handled. Duration 359 ms by bot id=7987337779
+2025-01-15 15:32:17,133 - aiogram.event - INFO - Update id=785582017 is handled. Duration 702 ms by bot id=7987337779
+2025-01-15 15:32:20,434 - aiogram.event - INFO - Update id=785582018 is handled. Duration 469 ms by bot id=7987337779
+2025-01-15 15:32:23,135 - bot.handlers.start - INFO - Пользователь 6453533068 успешно зарегистрировался
+2025-01-15 15:32:24,032 - aiogram.event - INFO - Update id=785582019 is handled. Duration 1077 ms by bot id=7987337779
+2025-01-15 15:32:28,841 - aiogram.event - INFO - Update id=785582020 is handled. Duration 3327 ms by bot id=7987337779
+2025-01-15 15:32:35,248 - aiogram.event - INFO - Update id=785582021 is handled. Duration 1406 ms by bot id=7987337779
+2025-01-15 15:32:38,611 - aiogram.event - INFO - Update id=785582022 is handled. Duration 3375 ms by bot id=7987337779
+2025-01-15 15:32:42,439 - aiogram.event - INFO - Update id=785582023 is handled. Duration 250 ms by bot id=7987337779
+2025-01-15 15:32:45,418 - aiogram.event - INFO - Update id=785582024 is handled. Duration 531 ms by bot id=7987337779
+2025-01-15 15:32:57,371 - aiogram.event - INFO - Update id=785582025 is handled. Duration 10156 ms by bot id=7987337779
+2025-01-15 15:33:00,227 - aiogram.event - INFO - Update id=785582026 is handled. Duration 844 ms by bot id=7987337779
+2025-01-15 15:33:02,776 - aiogram.event - INFO - Update id=785582027 is handled. Duration 906 ms by bot id=7987337779
+2025-01-15 15:33:05,891 - aiogram.event - INFO - Update id=785582028 is handled. Duration 311 ms by bot id=7987337779
+2025-01-15 15:33:14,237 - aiogram.event - INFO - Update id=785582029 is handled. Duration 547 ms by bot id=7987337779
+2025-01-15 15:33:17,255 - aiogram.event - INFO - Update id=785582030 is handled. Duration 233 ms by bot id=7987337779
+2025-01-15 15:33:20,655 - aiogram.event - INFO - Update id=785582031 is handled. Duration 234 ms by bot id=7987337779
+2025-01-15 15:33:24,130 - aiogram.event - INFO - Update id=785582032 is handled. Duration 452 ms by bot id=7987337779
+2025-01-15 15:33:29,607 - aiogram.event - INFO - Update id=785582033 is handled. Duration 312 ms by bot id=7987337779
+2025-01-15 15:33:34,100 - aiogram.event - INFO - Update id=785582034 is handled. Duration 359 ms by bot id=7987337779
+2025-01-15 15:33:37,360 - aiogram.event - INFO - Update id=785582035 is handled. Duration 405 ms by bot id=7987337779
+2025-01-15 15:33:40,044 - aiogram.event - INFO - Update id=785582036 is handled. Duration 297 ms by bot id=7987337779
+2025-01-15 15:33:43,191 - aiogram.event - INFO - Update id=785582037 is handled. Duration 297 ms by bot id=7987337779
+2025-01-15 15:33:45,670 - aiogram.event - INFO - Update id=785582038 is handled. Duration 406 ms by bot id=7987337779
+2025-01-15 15:33:52,098 - aiogram.event - INFO - Update id=785582039 is handled. Duration 3452 ms by bot id=7987337779
+2025-01-15 15:33:58,945 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 15:33:58,945 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 15:33:59,212 - __main__ - INFO - Закрытие сессии бота

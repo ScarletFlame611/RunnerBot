@@ -102,15 +102,21 @@ async def change_profile_parameter(callback_query: CallbackQuery, state: FSMCont
 # Обработчик для получения нового значения
 @router.message(ProfileChange.waiting_for_name)
 async def process_name(message: Message, state: FSMContext):
-    new_name = message.text
+    new_name = message.text.strip()
     user_id = message.from_user.id
+
+    # Проверяем, что имя состоит из букв и содержит хотя бы два слова
+    if not new_name.replace(" ", "").isalpha() or len(new_name.split()) < 2:
+        await message.answer(
+            "Пожалуйста, введите корректное ФИО. Оно должно состоять только из букв и содержать минимум два слова."
+        )
+        return
 
     # Обновляем имя в базе данных
     update_profile_in_db(user_id, "full_name", new_name)
 
-    await message.answer(f"Ваше имя успешно обновлено на {new_name}.")
-    await state.clear() # Завершаем состояние
-
+    await message.answer(f"Ваше имя успешно обновлено на: {new_name}.")
+    await state.clear()  # Завершаем состояние
 @router.message(ProfileChange.waiting_for_age)
 async def process_age(message: Message, state: FSMContext):
     new_age = message.text
@@ -135,7 +141,7 @@ async def process_height(message: Message, state: FSMContext):
 
     # Проверка, является ли введенное значение числом
     if not new_height.isdigit():
-        await message.answer("Пожалуйста, введите корректный рост в метрах).")
+        await message.answer("Пожалуйста, введите корректный рост в см).")
         return
 
     # Обновляем рост в базе данных
