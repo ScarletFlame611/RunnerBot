@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
@@ -6,6 +8,9 @@ from langchain.chains import LLMChain
 from langchain_gigachat import GigaChat
 from bot.utils.config import GigaChatKey
 from bot.utils.db import get_user_profile
+
+
+logger = logging.getLogger(__name__)
 
 # Настройка API ключа для GigaChat
 GigaChatKey = GigaChatKey
@@ -57,6 +62,7 @@ async def send_motivation(message: Message):
         await message.answer(f"Ваше мотивационное сообщение:\n\n{motivation_message['text']}", parse_mode="Markdown")
     except Exception as e:
         print(f"Ошибка генерации мотивационного сообщения: {e}")
+        logger.error(f"Ошибка генерации мотивационного сообщения {user_id}: {e}")
         await message.answer("Не удалось создать мотивационное сообщение. Попробуйте позже.")
 
 
@@ -78,4 +84,5 @@ async def send_advice(message: Message):
         await message.answer(f"Ваш совет:\n\n{advice_message['text']}", parse_mode="Markdown")
     except Exception as e:
         print(f"Ошибка генерации совета: {e}")
+        logger.error(f"Ошибка генерации совета {user_id}: {e}")
         await message.answer("Не удалось создать совет. Попробуйте позже.")

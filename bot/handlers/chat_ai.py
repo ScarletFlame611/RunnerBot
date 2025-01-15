@@ -1,3 +1,5 @@
+import logging
+
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
@@ -7,6 +9,9 @@ from langchain_gigachat import GigaChat
 from bot.utils.config import GigaChatKey
 # Словарь для хранения памяти пользователей
 user_histories = {}
+
+
+logger = logging.getLogger(__name__)
 
 # Настройка API ключа для GigaChat
 GigaChatKey = GigaChatKey
@@ -50,6 +55,7 @@ async def ai_assistant(message: Message):
         await message.answer(f"Ответ от ассистента: {response}", parse_mode="Markdown")
     except Exception as e:
         print(f"Произошла ошибка: {e}")
+        logger.error(f"Ошибка генерации ответа {user_id}: {e}")
         await message.answer("Произошла ошибка при обработке вашего запроса.")
 
 # Функция для получения или создания истории пользователя
