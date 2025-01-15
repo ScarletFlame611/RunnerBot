@@ -76,6 +76,11 @@ def init_db():
                 FOREIGN KEY (achievement_id) REFERENCES achievements (id)
             )
         """)
+
+    cursor.execute("""CREATE TABLE IF NOT EXISTS user_settings (
+    user_id INTEGER,
+    reminders_enabled BOOLEAN DEFAULT FALSE
+    );""")
     conn.commit()
     conn.close()
 
@@ -301,3 +306,51 @@ def get_user_achievements(user_id: int):
     achievements = cursor.fetchall()
     conn.close()
     return achievements
+
+
+def get_user_settings(user_id):
+    """
+    Получить настройки пользователя.
+    :param user_id: ID пользователя.
+    :return: Словарь с настройками пользователя.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT reminders_enabled FROM user_settings WHERE user_id = ?", (user_id,))
+    result = cursor.fetchone()
+    conn.close()
+
+    if result:
+        return {"reminders_enabled": bool(result[0])}
+    else:
+        # Если пользователь отсутствует, возвращаем настройки по умолчанию
+        return {"reminders_enabled": False}
+
+
+def update_user_settings(user_id, settings):
+    """
+    Обновить настройки пользователя.
+    :param user_id: ID пользователя.
+    :param settings: Словарь с новыми настройками.
+    """
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+
+    # Проверяем, есть ли пользователь в таблице
+    cursor.execute("SELECT 1 FROM user_settings WHERE user_id = ?", (user_id,))
+    if cursor.fetchone():
+        # Если пользователь есть, обновляем записи
+        cursor.execute(
+            "UPDATE user_settings SET reminders_enabled = ? WHERE user_id = ?",
+            (settings.get("reminders_enabled", False), user_id)
+        )
+    else:
+        # Если пользователя нет, добавляем его в таблицу
+        cursor.execute(
+            "INSERT INTO user_settings (user_id, reminders_enabled) VALUES (?, ?)",
+            (user_id, settings.get("reminders_enabled", False))
+        )
+
+    conn.commit()
+    conn.close()

@@ -5792,3 +5792,536 @@ TypeError: handle_errors() missing 1 required positional argument: 'exception'
 2025-01-15 15:33:58,945 - aiogram.dispatcher - INFO - Polling stopped
 2025-01-15 15:33:58,945 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
 2025-01-15 15:33:59,212 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:09:49,980 - __main__ - INFO - Запуск main()
+2025-01-15 16:09:50,039 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:09:50,208 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:09:50,219 - __main__ - INFO - Подключение middleware
+2025-01-15 16:09:50,219 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:09:50,219 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:09:50,234 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:09:50,234 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:09:50,256 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:09:52,755 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:10:21,098 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:10:21,098 - aiogram.event - INFO - Update id=785582040 is handled. Duration 1000 ms by bot id=7987337779
+2025-01-15 16:10:27,218 - aiogram.event - INFO - Update id=785582041 is handled. Duration 936 ms by bot id=7987337779
+2025-01-15 16:10:46,687 - apscheduler.scheduler - INFO - Removed job c6abf223e880406fb7f225e41f6d672c
+2025-01-15 16:10:46,687 - aiogram.event - INFO - Update id=785582042 is handled. Duration 469 ms by bot id=7987337779
+2025-01-15 16:10:49,043 - aiogram.event - INFO - Update id=785582043 is handled. Duration 250 ms by bot id=7987337779
+2025-01-15 16:10:56,868 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:10:56,884 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:10:57,138 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:10:57,138 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:10:57,138 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:11:57,292 - __main__ - INFO - Запуск main()
+2025-01-15 16:11:57,293 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:11:57,294 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:11:57,304 - __main__ - INFO - Подключение middleware
+2025-01-15 16:11:57,304 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:11:57,305 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:11:57,305 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:11:57,305 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:11:57,306 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:11:57,938 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:12:05,765 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:12:05,765 - aiogram.event - INFO - Update id=785582044 is handled. Duration 1547 ms by bot id=7987337779
+2025-01-15 16:12:29,972 - aiogram.event - INFO - Update id=785582045 is handled. Duration 250 ms by bot id=7987337779
+2025-01-15 16:13:15,990 - apscheduler.scheduler - INFO - Removed job 92742962c6434fd38dddde0c4aaece4c
+2025-01-15 16:13:15,990 - aiogram.event - INFO - Update id=785582046 is handled. Duration 1468 ms by bot id=7987337779
+2025-01-15 16:16:31,215 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:16:31,216 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:16:31,443 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:16:31,443 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:16:31,443 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:16:35,610 - __main__ - INFO - Запуск main()
+2025-01-15 16:16:35,611 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:16:35,612 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:16:35,623 - __main__ - INFO - Подключение middleware
+2025-01-15 16:16:35,623 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:16:35,623 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:16:35,624 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:16:35,624 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:16:35,624 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:16:36,744 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:17:24,304 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:17:24,304 - aiogram.event - INFO - Update id=785582047 is handled. Duration 875 ms by bot id=7987337779
+2025-01-15 16:19:07,696 - apscheduler.scheduler - INFO - Removed job 821aadd304814611bce41a5695fc08d1
+2025-01-15 16:19:07,696 - aiogram.event - INFO - Update id=785582048 is handled. Duration 485 ms by bot id=7987337779
+2025-01-15 16:22:47,824 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:22:47,824 - aiogram.event - INFO - Update id=785582049 is handled. Duration 906 ms by bot id=7987337779
+2025-01-15 16:24:41,831 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:24:41,831 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:24:42,078 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:24:42,078 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:24:42,078 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:24:46,186 - __main__ - INFO - Запуск main()
+2025-01-15 16:24:46,187 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:24:46,188 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:24:46,199 - __main__ - INFO - Подключение middleware
+2025-01-15 16:24:46,199 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:24:46,199 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:24:46,200 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:24:46,200 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:24:46,200 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:24:47,782 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:24:50,282 - aiogram.event - INFO - Update id=785582050 is handled. Duration 1750 ms by bot id=7987337779
+2025-01-15 16:24:55,702 - aiogram.event - INFO - Update id=785582051 is handled. Duration 1235 ms by bot id=7987337779
+2025-01-15 16:25:02,553 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:25:02,553 - aiogram.event - INFO - Update id=785582052 is not handled. Duration 1375 ms by bot id=7987337779
+2025-01-15 16:25:02,553 - aiogram.event - ERROR - Cause exception while process update id=785582052 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 30, in enable_reminders
+    add_reminder_task(user_id, message.bot)
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 72, in add_reminder_task
+    print(f"Задача: {job}, Следующее выполнение: {job.next_run_time}")
+AttributeError: next_run_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 16:25:42,332 - apscheduler.scheduler - INFO - Removed job 8516f5a20c9142a0bf9b5e5958832b57
+2025-01-15 16:25:42,332 - aiogram.event - INFO - Update id=785582053 is handled. Duration 1860 ms by bot id=7987337779
+2025-01-15 16:26:44,618 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:26:44,619 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:26:44,880 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:26:44,880 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:26:44,880 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:26:48,871 - __main__ - INFO - Запуск main()
+2025-01-15 16:26:48,872 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:26:48,873 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:26:48,884 - __main__ - INFO - Подключение middleware
+2025-01-15 16:26:48,884 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:26:48,884 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:26:48,885 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:26:48,885 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:26:48,886 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:26:50,657 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:27:23,461 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:27:23,461 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:27:23,461 - aiogram.event - INFO - Update id=785582054 is not handled. Duration 1171 ms by bot id=7987337779
+2025-01-15 16:27:23,462 - aiogram.event - ERROR - Cause exception while process update id=785582054 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 30, in enable_reminders
+    add_reminder_task(user_id, message.bot)
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 74, in add_reminder_task
+    print(f"Задача: {job}, Следующее выполнение: {job.next_run_time}")
+AttributeError: next_run_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 16:27:31,232 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:27:31,233 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:27:31,488 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:27:31,488 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:27:31,488 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:29:58,331 - __main__ - INFO - Запуск main()
+2025-01-15 16:29:58,332 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:29:58,333 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:29:58,344 - __main__ - INFO - Подключение middleware
+2025-01-15 16:29:58,345 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:29:58,345 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:29:58,345 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:29:58,346 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:29:58,346 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:29:59,544 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:30:12,738 - aiogram.event - INFO - Update id=785582055 is handled. Duration 4250 ms by bot id=7987337779
+2025-01-15 16:30:16,856 - aiogram.event - INFO - Update id=785582056 is handled. Duration 1266 ms by bot id=7987337779
+2025-01-15 16:31:23,928 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:31:23,928 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:31:24,183 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:31:24,183 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:31:24,183 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:31:28,233 - __main__ - INFO - Запуск main()
+2025-01-15 16:31:28,233 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:31:28,234 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:31:28,245 - __main__ - INFO - Подключение middleware
+2025-01-15 16:31:28,245 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:31:28,245 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:31:28,246 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:31:28,246 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:31:28,247 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:31:31,932 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:31:34,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:31:34,228 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:31:34,228 - aiogram.event - INFO - Update id=785582057 is not handled. Duration 2030 ms by bot id=7987337779
+2025-01-15 16:31:34,228 - aiogram.event - ERROR - Cause exception while process update id=785582057 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 30, in enable_reminders
+    add_reminder_task(user_id, message.bot)
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 75, in add_reminder_task
+    print(f"Задача: {job}, Следующее выполнение: {job.next_run_time}")
+AttributeError: next_run_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 16:34:06,999 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:34:06,999 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:34:07,251 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:34:07,251 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:34:07,251 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:34:11,267 - __main__ - INFO - Запуск main()
+2025-01-15 16:34:11,268 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:34:11,269 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:34:11,280 - __main__ - INFO - Подключение middleware
+2025-01-15 16:34:11,280 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:34:11,280 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:34:11,281 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:34:11,281 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:34:11,281 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:34:15,692 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:34:18,633 - aiogram.event - INFO - Update id=785582058 is handled. Duration 2608 ms by bot id=7987337779
+2025-01-15 16:34:22,512 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:34:22,512 - aiogram.event - INFO - Update id=785582059 is not handled. Duration 422 ms by bot id=7987337779
+2025-01-15 16:34:22,512 - aiogram.event - ERROR - Cause exception while process update id=785582059 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 30, in enable_reminders
+    add_reminder_task(user_id, message.bot)
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 75, in add_reminder_task
+    print(f"Задача: {job}, Следующее выполнение: {job.next_run_time}")
+AttributeError: next_run_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 16:35:34,913 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:35:34,913 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:35:35,175 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:35:35,175 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:35:35,175 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:35:39,243 - __main__ - INFO - Запуск main()
+2025-01-15 16:35:39,244 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:35:39,245 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:35:39,256 - __main__ - INFO - Подключение middleware
+2025-01-15 16:35:39,256 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:35:39,256 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:35:39,257 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:35:39,257 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:35:39,257 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:35:40,064 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:36:42,091 - aiogram.event - INFO - Update id=785582060 is handled. Duration 936 ms by bot id=7987337779
+2025-01-15 16:36:44,676 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-15 16:36:44,677 - aiogram.event - INFO - Update id=785582061 is not handled. Duration 453 ms by bot id=7987337779
+2025-01-15 16:36:44,677 - aiogram.event - ERROR - Cause exception while process update id=785582061 by bot id=7987337779
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\bot\middlewares\registration_check.py", line 31, in __call__
+    return await handler(event, data)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 30, in enable_reminders
+    add_reminder_task(user_id, message.bot)
+  File "D:\Programming\Python\RunnerBot\bot\handlers\reminders.py", line 78, in add_reminder_task
+    print(f"Задача: {job}, Следующее выполнение: {job.next_run_time}")
+AttributeError: next_run_time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 29, in __call__
+    response = await self.router.propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "D:\Programming\Python\RunnerBot\.venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+TypeError: handle_errors() missing 1 required positional argument: 'exception'
+2025-01-15 16:44:33,955 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:44:33,992 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:44:34,247 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:44:34,247 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:44:34,247 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-15 16:44:42,191 - __main__ - INFO - Запуск main()
+2025-01-15 16:44:42,192 - __main__ - INFO - Инициализация базы данных
+2025-01-15 16:44:42,193 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-15 16:44:42,203 - __main__ - INFO - Подключение middleware
+2025-01-15 16:44:42,204 - __main__ - INFO - Регистрация хендлеров
+2025-01-15 16:44:42,204 - __main__ - INFO - Запуск планировщика задач
+2025-01-15 16:44:42,205 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-15 16:44:42,205 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-15 16:44:42,205 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 16:44:43,280 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:44:50,245 - apscheduler.scheduler - INFO - Added job "send_reminder" to job store "default"
+2025-01-15 16:44:53,202 - aiogram.event - INFO - Update id=785582062 is handled. Duration 2953 ms by bot id=7987337779
+2025-01-15 16:44:55,264 - apscheduler.executors.default - INFO - Running job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:00 MSK)" (scheduled at 2025-01-15 16:44:55.245271+03:00)
+2025-01-15 16:44:56,107 - apscheduler.executors.default - INFO - Job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:00 MSK)" executed successfully
+2025-01-15 16:45:00,258 - apscheduler.executors.default - INFO - Running job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:05 MSK)" (scheduled at 2025-01-15 16:45:00.245271+03:00)
+2025-01-15 16:45:01,804 - apscheduler.executors.default - INFO - Job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:05 MSK)" executed successfully
+2025-01-15 16:45:05,257 - apscheduler.executors.default - INFO - Running job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:10 MSK)" (scheduled at 2025-01-15 16:45:05.245271+03:00)
+2025-01-15 16:45:05,439 - apscheduler.scheduler - INFO - Removed job f07452429cf54f179b6c0cd95d5e81e2
+2025-01-15 16:45:06,650 - apscheduler.executors.default - INFO - Job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:45:10 MSK)" executed successfully
+2025-01-15 16:45:17,120 - aiogram.event - INFO - Update id=785582063 is handled. Duration 11687 ms by bot id=7987337779
+2025-01-15 16:45:47,864 - aiogram.event - INFO - Update id=785582064 is handled. Duration 375 ms by bot id=7987337779
+2025-01-15 16:45:52,016 - apscheduler.scheduler - INFO - Added job "send_reminder" to job store "default"
+2025-01-15 16:45:52,941 - aiogram.event - INFO - Update id=785582065 is handled. Duration 922 ms by bot id=7987337779
+2025-01-15 16:45:57,023 - apscheduler.executors.default - INFO - Running job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:46:02 MSK)" (scheduled at 2025-01-15 16:45:57.015067+03:00)
+2025-01-15 16:45:57,399 - apscheduler.executors.default - INFO - Job "send_reminder (trigger: interval[0:00:05], next run at: 2025-01-15 16:46:02 MSK)" executed successfully
+2025-01-15 16:45:59,531 - apscheduler.scheduler - INFO - Removed job 35254faba0fd44a29e4a99a985e42cd6
+2025-01-15 16:45:59,915 - aiogram.event - INFO - Update id=785582066 is handled. Duration 390 ms by bot id=7987337779
+2025-01-15 16:46:09,180 - apscheduler.scheduler - INFO - Added job "send_reminder" to job store "default"
+2025-01-15 16:46:10,080 - aiogram.event - INFO - Update id=785582067 is handled. Duration 891 ms by bot id=7987337779
+2025-01-15 16:46:10,393 - apscheduler.scheduler - INFO - Removed job 675d79b21d0a4885a842a0c6e06a11ed
+2025-01-15 16:46:12,444 - aiogram.event - INFO - Update id=785582068 is handled. Duration 2063 ms by bot id=7987337779
+2025-01-15 16:48:45,786 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 16:48:45,787 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-15 16:48:46,047 - __main__ - INFO - Закрытие сессии бота
+2025-01-15 16:48:46,047 - __main__ - INFO - Остановка планировщика задач
+2025-01-15 16:48:46,047 - apscheduler.scheduler - INFO - Scheduler has been shut down

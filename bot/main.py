@@ -1,42 +1,29 @@
 import asyncio
+import logging
 from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiogram.filters import Command
 from bot.utils.config import BOT_TOKEN
-from bot.handlers import help
-from bot.handlers import choose_menu
-from bot.handlers import add_run
-from bot.handlers import profile
-from bot.handlers import errors
-from bot.handlers import menu
-from bot.handlers import last_trainings
-from bot.handlers import compare_two
-from bot.handlers import year_statistic
-from bot.handlers import achievements
-from bot.handlers import chat_ai
-from bot.handlers import advice
-from bot.handlers import random_text
-from bot.handlers.start import router as start_router
-from bot.middlewares.registration_check import RegistrationCheckMiddleware
 from bot.utils.db import init_db
-import logging
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from bot.middlewares.registration_check import RegistrationCheckMiddleware
+from bot.handlers.start import router as start_router
+from bot.handlers import help, choose_menu, add_run, profile, errors, menu, last_trainings, \
+    compare_two, year_statistic, achievements, chat_ai, advice, random_text
+from bot.handlers.reminders import start_scheduler, stop_scheduler, enable_reminders, \
+    disable_reminders
 
-logging.basicConfig(
-    level=logging.INFO,  # Уровень логирования
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",  # Формат сообщения
-    filename="../data/bot.log",  # Файл логов
-    filemode="a",  # Режим записи (добавление)
-)
-
-# Создаем логер для текущего модуля
+# Настройка логирования
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+                    filename="../data/bot.log", filemode="a")
 logger = logging.getLogger(__name__)
 
 
-
+# Инициализация бота и диспетчера
 async def main():
     # Логирование: начало работы
     logger.info("Инициализация базы данных")
-
-    # Инициализация базы данных
     init_db()
 
     # Настройка бота
@@ -66,6 +53,13 @@ async def main():
     dp.include_router(advice.router)
     dp.include_router(random_text.router)
 
+    # Регистрация команд для напоминаний
+    dp.message.register(enable_reminders, Command("enable_reminders"))
+    dp.message.register(disable_reminders, Command("disable_reminders"))
+
+    # Запуск планировщика
+    await start_scheduler()
+
     # Запуск бота
     try:
         logger.info("Бот запущен! Начало polling...")
@@ -76,6 +70,9 @@ async def main():
     finally:
         logger.info("Закрытие сессии бота")
         await bot.session.close()
+
+        # Остановка планировщика при завершении работы бота
+        await stop_scheduler()
 
 
 if __name__ == "__main__":
