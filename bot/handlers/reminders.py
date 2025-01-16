@@ -25,7 +25,6 @@ async def stop_scheduler():
 
 # Функция для отправки напоминания
 async def send_reminder(user_id, bot):
-    """Отправка напоминания пользователю."""
     try:
         await bot.send_message(user_id, "Не забудьте про тренировку!")
     except Exception as e:
@@ -38,7 +37,6 @@ async def enable_reminders(message):
     if user_id in scheduled_jobs:
         await message.answer("Напоминания уже включены!")
         return
-
     # Добавляем задачу в планировщик
     job = scheduler.add_job(send_reminder, IntervalTrigger(days=1), args=[user_id, message.bot])
     scheduled_jobs[user_id] = job
@@ -51,7 +49,6 @@ async def disable_reminders(message):
     if user_id not in scheduled_jobs:
         await message.answer("Напоминания не были включены.")
         return
-
     # Удаляем задачу из планировщика
     job = scheduled_jobs.pop(user_id)
     job.remove()

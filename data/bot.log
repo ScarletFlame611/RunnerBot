@@ -296,3 +296,80 @@ TypeError: handle_errors() missing 1 required positional argument: 'exception'
 2025-01-16 04:14:36,811 - __main__ - INFO - Закрытие сессии бота
 2025-01-16 04:14:36,811 - bot.handlers.reminders - INFO - Остановка планировщика задач
 2025-01-16 04:14:36,811 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-16 04:22:03,219 - __main__ - INFO - Запуск main()
+2025-01-16 04:22:03,282 - __main__ - INFO - Инициализация базы данных
+2025-01-16 04:22:03,338 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-16 04:22:03,349 - __main__ - INFO - Подключение middleware
+2025-01-16 04:22:03,349 - __main__ - INFO - Регистрация хендлеров
+2025-01-16 04:22:03,349 - bot.handlers.reminders - INFO - Запуск планировщика задач
+2025-01-16 04:22:03,393 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-16 04:22:03,393 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-16 04:22:03,394 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 04:22:03,894 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:22:04,183 - bot.handlers.start - INFO - Пользователь 615014924 вызвал команду /start
+2025-01-16 04:22:04,184 - bot.handlers.start - INFO - Пользователь 615014924 уже зарегистрирован
+2025-01-16 04:22:04,519 - aiogram.event - INFO - Update id=785582114 is handled. Duration 343 ms by bot id=7987337779
+2025-01-16 04:22:06,151 - aiogram.event - INFO - Update id=785582115 is handled. Duration 171 ms by bot id=7987337779
+2025-01-16 04:22:14,692 - aiogram.event - INFO - Update id=785582116 is handled. Duration 1468 ms by bot id=7987337779
+2025-01-16 04:22:16,235 - aiogram.event - INFO - Update id=785582117 is handled. Duration 250 ms by bot id=7987337779
+2025-01-16 04:22:18,264 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-01-16 04:22:20,566 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 04:22:20,745 - aiogram.event - INFO - Update id=785582118 is handled. Duration 2750 ms by bot id=7987337779
+2025-01-16 04:22:47,906 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 04:22:48,075 - aiogram.event - INFO - Update id=785582119 is handled. Duration 2515 ms by bot id=7987337779
+2025-01-16 04:22:54,465 - aiogram.event - INFO - Update id=785582120 is handled. Duration 234 ms by bot id=7987337779
+2025-01-16 04:22:56,273 - aiogram.event - INFO - Update id=785582121 is handled. Duration 108 ms by bot id=7987337779
+2025-01-16 04:22:58,579 - aiogram.event - INFO - Update id=785582122 is handled. Duration 125 ms by bot id=7987337779
+2025-01-16 04:23:01,289 - aiogram.event - INFO - Update id=785582123 is handled. Duration 530 ms by bot id=7987337779
+2025-01-16 04:23:07,044 - aiogram.event - INFO - Update id=785582124 is handled. Duration 250 ms by bot id=7987337779
+2025-01-16 04:23:09,279 - aiogram.event - INFO - Update id=785582125 is handled. Duration 108 ms by bot id=7987337779
+2025-01-16 04:23:13,571 - aiogram.event - INFO - Update id=785582126 is handled. Duration 218 ms by bot id=7987337779
+2025-01-16 04:23:21,590 - aiogram.event - INFO - Update id=785582127 is handled. Duration 469 ms by bot id=7987337779
+2025-01-16 04:23:29,468 - aiogram.event - INFO - Update id=785582128 is handled. Duration 702 ms by bot id=7987337779
+2025-01-16 04:23:30,916 - aiogram.event - INFO - Update id=785582129 is handled. Duration 234 ms by bot id=7987337779
+2025-01-16 04:23:33,231 - aiogram.event - INFO - Update id=785582130 is handled. Duration 187 ms by bot id=7987337779
+2025-01-16 04:23:39,349 - aiogram.event - INFO - Update id=785582131 is handled. Duration 109 ms by bot id=7987337779
+2025-01-16 04:23:46,020 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:23:46,020 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 04:23:46,272 - __main__ - INFO - Закрытие сессии бота
+2025-01-16 04:23:46,272 - bot.handlers.reminders - INFO - Остановка планировщика задач
+2025-01-16 04:23:46,272 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-16 14:58:31,866 - __main__ - INFO - Запуск main()
+2025-01-16 14:58:31,899 - __main__ - INFO - Инициализация базы данных
+2025-01-16 14:58:31,976 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-16 14:58:31,987 - __main__ - INFO - Подключение middleware
+2025-01-16 14:58:31,987 - __main__ - INFO - Регистрация хендлеров
+2025-01-16 14:58:31,987 - bot.handlers.reminders - INFO - Запуск планировщика задач
+2025-01-16 14:58:31,989 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-16 14:58:31,989 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-16 14:58:31,989 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 14:58:34,358 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 14:58:53,009 - bot.handlers.start - INFO - Пользователь 615014924 вызвал команду /start
+2025-01-16 14:58:53,010 - bot.handlers.start - INFO - Пользователь 615014924 уже зарегистрирован
+2025-01-16 14:58:55,568 - aiogram.event - INFO - Update id=785582132 is handled. Duration 2608 ms by bot id=7987337779
+2025-01-16 14:58:59,851 - aiogram.event - INFO - Update id=785582133 is handled. Duration 2108 ms by bot id=7987337779
+2025-01-16 14:59:04,305 - aiogram.event - INFO - Update id=785582134 is handled. Duration 389 ms by bot id=7987337779
+2025-01-16 14:59:08,155 - aiogram.event - INFO - Update id=785582135 is handled. Duration 547 ms by bot id=7987337779
+2025-01-16 14:59:10,793 - aiogram.event - INFO - Update id=785582136 is handled. Duration 657 ms by bot id=7987337779
+2025-01-16 14:59:17,956 - apscheduler.scheduler - INFO - Added job "send_reminder" to job store "default"
+2025-01-16 14:59:18,339 - aiogram.event - INFO - Update id=785582137 is handled. Duration 391 ms by bot id=7987337779
+2025-01-16 14:59:24,679 - apscheduler.scheduler - INFO - Removed job 48fa936f61bb43d19fcef7eb626e5cb9
+2025-01-16 14:59:25,844 - aiogram.event - INFO - Update id=785582138 is handled. Duration 1157 ms by bot id=7987337779
+2025-01-16 14:59:50,410 - bot.handlers.advice - ERROR - Ошибка генерации мотивационного сообщения 615014924: [WinError 10060] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+2025-01-16 14:59:52,580 - aiogram.event - INFO - Update id=785582139 is handled. Duration 23813 ms by bot id=7987337779
+2025-01-16 14:59:56,729 - aiogram.event - INFO - Update id=785582140 is handled. Duration 436 ms by bot id=7987337779
+2025-01-16 14:59:59,614 - aiogram.event - INFO - Update id=785582141 is handled. Duration 483 ms by bot id=7987337779
+2025-01-16 15:00:03,154 - aiogram.event - INFO - Update id=785582142 is handled. Duration 469 ms by bot id=7987337779
+2025-01-16 15:00:10,882 - aiogram.event - INFO - Update id=785582143 is handled. Duration 420 ms by bot id=7987337779
+2025-01-16 15:00:20,434 - aiogram.event - INFO - Update id=785582144 is handled. Duration 405 ms by bot id=7987337779
+2025-01-16 15:00:27,923 - aiogram.event - INFO - Update id=785582145 is handled. Duration 1077 ms by bot id=7987337779
+2025-01-16 15:00:30,537 - aiogram.event - INFO - Update id=785582146 is handled. Duration 438 ms by bot id=7987337779
+2025-01-16 15:00:40,321 - aiogram.event - INFO - Update id=785582147 is handled. Duration 655 ms by bot id=7987337779
+2025-01-16 15:00:45,283 - aiogram.event - INFO - Update id=785582148 is handled. Duration 405 ms by bot id=7987337779
+2025-01-16 15:01:01,005 - aiogram.event - INFO - Update id=785582149 is handled. Duration 9500 ms by bot id=7987337779
+2025-01-16 15:01:29,001 - aiogram.event - INFO - Update id=785582150 is handled. Duration 18405 ms by bot id=7987337779
+2025-01-16 15:01:35,439 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 15:01:35,440 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 15:01:35,698 - __main__ - INFO - Закрытие сессии бота
+2025-01-16 15:01:35,698 - bot.handlers.reminders - INFO - Остановка планировщика задач
+2025-01-16 15:01:35,698 - apscheduler.scheduler - INFO - Scheduler has been shut down

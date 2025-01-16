@@ -5,7 +5,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 router = Router()
 
-# Создание inline-клавиатуры для меню выбора
+
+# Создание inline-клавиатур
 def create_menu_inline_keyboard():
     builder = InlineKeyboardBuilder()
     builder.button(text="Выбрать уровень", callback_data="menu:choose_level")
@@ -13,21 +14,22 @@ def create_menu_inline_keyboard():
     builder.adjust(1)
     return builder.as_markup()
 
+
 def create_level_inline_keyboard() -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     builder.button(text="Начинающий", callback_data="level:Начинающий")
     builder.button(text="Средний", callback_data="level:Средний")
     builder.button(text="Продвинутый", callback_data="level:Продвинутый")
-    builder.adjust(1)  # Кнопки располагаются вертикально
+    builder.adjust(1)
     return builder.as_markup()
 
-# Создание inline-клавиатуры для выбора цели
+
 def create_goal_inline_keyboard() -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
     builder.button(text="Похудение", callback_data="goal:Похудение")
     builder.button(text="Повышение выносливости", callback_data="goal:Повышение выносливости")
     builder.button(text="Поддержание формы", callback_data="goal:Поддержание формы")
-    builder.adjust(1)  # Кнопки располагаются вертикально
+    builder.adjust(1)
     return builder.as_markup()
 
 
@@ -38,6 +40,7 @@ async def choose_menu(message: Message):
         "Что вы хотите выбрать?",
         reply_markup=create_menu_inline_keyboard()
     )
+
 
 # Обработчик кнопок из меню
 @router.callback_query(F.data.startswith("menu:"))
@@ -57,18 +60,22 @@ async def menu_callback(callback: CallbackQuery):
         )
     await callback.answer()
 
+
 # Обработчик нажатия кнопки выбора уровня
 @router.callback_query(F.data.startswith("level:"))
 async def set_level_callback(callback: CallbackQuery):
     level = callback.data.split(":")[1]
     update_user_field(user_id=callback.from_user.id, field="level", value=level)
-    await callback.message.edit_text(f"Ваш уровень '{level}' успешно сохранён!")  # Редактируем сообщение
+    await callback.message.edit_text(
+        f"Ваш уровень '{level}' успешно сохранён!")  # Редактируем сообщение
     await callback.answer()  # Закрываем всплывающее уведомление
+
 
 # Обработчик нажатия кнопки выбора цели
 @router.callback_query(F.data.startswith("goal:"))
 async def set_goal_callback(callback: CallbackQuery):
     goal = callback.data.split(":")[1]
     update_user_field(user_id=callback.from_user.id, field="goal", value=goal)
-    await callback.message.edit_text(f"Ваша цель '{goal}' успешно сохранена!")  # Редактируем сообщение
-    await callback.answer()  # Закрываем всплывающее уведомление
+    await callback.message.edit_text(
+        f"Ваша цель '{goal}' успешно сохранена!")
+    await callback.answer()

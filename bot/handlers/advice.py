@@ -9,10 +9,8 @@ from langchain_gigachat import GigaChat
 from bot.utils.config import GigaChatKey
 from bot.utils.db import get_user_profile
 
-
 logger = logging.getLogger(__name__)
 
-# Настройка API ключа для GigaChat
 GigaChatKey = GigaChatKey
 llm_adv = GigaChat(credentials=GigaChatKey,
                    model='GigaChat:latest',
@@ -33,7 +31,6 @@ advice_prompt_template = """
 Убедись, что совет соответствует его текущему уровню подготовки и конкретной цели.
 """
 
-
 # Создаём цепочки
 motivation_prompt = PromptTemplate.from_template(motivation_prompt_template)
 advice_prompt = PromptTemplate.from_template(advice_prompt_template)
@@ -44,11 +41,12 @@ advice_chain = LLMChain(llm=llm_adv, prompt=advice_prompt)
 router = Router()
 
 
+# команда для отправки мотивационного сообщения
 @router.message(Command("motivation"))
 async def send_motivation(message: Message):
     user_id = message.from_user.id
 
-    # Получаем данные пользователя через вашу функцию
+    # Получаем данные пользователя через функцию
     user_profile = get_user_profile(user_id)
 
     if not user_profile:
@@ -59,18 +57,20 @@ async def send_motivation(message: Message):
         # Генерация мотивационного сообщения
         motivation_message = motivation_chain.invoke(
             {"level": user_profile["level"], "goal": user_profile["goal"]})
-        await message.answer(f"Ваше мотивационное сообщение:\n\n{motivation_message['text']}", parse_mode="Markdown")
+        await message.answer(f"Ваше мотивационное сообщение:\n\n{motivation_message['text']}",
+                             parse_mode="Markdown")
     except Exception as e:
         print(f"Ошибка генерации мотивационного сообщения: {e}")
         logger.error(f"Ошибка генерации мотивационного сообщения {user_id}: {e}")
         await message.answer("Не удалось создать мотивационное сообщение. Попробуйте позже.")
 
 
+# команда для отправки совета
 @router.message(Command("advice"))
 async def send_advice(message: Message):
     user_id = message.from_user.id
 
-    # Получаем данные пользователя через вашу функцию
+    # Получаем данные пользователя через функцию
     user_profile = get_user_profile(user_id)
 
     if not user_profile:

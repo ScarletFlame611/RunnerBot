@@ -7,9 +7,9 @@ from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain_gigachat import GigaChat
 from bot.utils.config import GigaChatKey
+
 # Словарь для хранения памяти пользователей
 user_histories = {}
-
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +28,7 @@ prompt = PromptTemplate.from_template(base_prompt_template)
 
 router = Router()
 
+# команда для общения с ботом
 @router.message(Command("ask_ai"))
 async def ai_assistant(message: Message):
     user_input = message.text[len("/ask_ai "):].strip()
@@ -58,9 +59,9 @@ async def ai_assistant(message: Message):
         logger.error(f"Ошибка генерации ответа {user_id}: {e}")
         await message.answer("Произошла ошибка при обработке вашего запроса.")
 
+
 # Функция для получения или создания истории пользователя
 def get_user_history(user_id):
-    """Получение истории пользователя. Если её нет, создаётся новая."""
     if user_id not in user_histories:
         user_histories[user_id] = []
     return user_histories[user_id]

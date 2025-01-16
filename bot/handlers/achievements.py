@@ -2,9 +2,10 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
 from bot.utils.db import get_user_achievements
+
 router = Router()
 
-# Список достижений
+# Список возможных достижений
 ACHIEVEMENTS = [
     "🏅 *Первый шаг*: Завершить первую пробежку.",
     "🏅 *Марафонец*: Пробежать суммарно 42.2 км.",
@@ -15,22 +16,23 @@ ACHIEVEMENTS = [
     "🏅 *Рекордсмен ленивых*: Завершить пробежку длиной меньше 1 км.",
 ]
 
+
+# Выводит все возможные достижения.
 @router.message(Command("achievements_info"))
 async def achievements_info_command(message: Message):
     achievements_text = "🎖 *Достижения*\n\n" + "\n".join(ACHIEVEMENTS)
     await message.answer(achievements_text, parse_mode="Markdown")
 
 
+# Выводит все достижения пользователя с датой получения.
 @router.message(Command("my_achievements"))
 async def my_achievements(message: Message):
-    """Выводит все достижения пользователя с эмодзи и датой получения."""
     user_id = message.from_user.id
 
     # Получаем достижения пользователя
     achievements = get_user_achievements(user_id)
 
     if achievements:
-        # Список эмодзи для достижения
         achievement_emojis = {
             "Первый шаг": "👟",
             "Марафонец": "🏃‍♂️",
@@ -50,4 +52,3 @@ async def my_achievements(message: Message):
         await message.answer(f"🎉 Ваши достижения:\n\n{achievements_text}")
     else:
         await message.answer("🚫 У вас еще нет достижений.")
-

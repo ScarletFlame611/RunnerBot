@@ -8,7 +8,7 @@ from aiogram.filters import Command
 
 router = Router()
 
-
+# условия для получения ачивок
 achievements_conditions = {
     "Первый шаг": lambda distance, duration, total_runs, total_distance: total_runs == 1,
     "Марафонец": lambda distance, duration, total_runs, total_distance: total_distance >= 42.2,
@@ -18,16 +18,20 @@ achievements_conditions = {
     "Первый десяток": lambda distance, duration, total_runs, total_distance: total_runs == 10,
     "Рекордсмен ленивых": lambda distance, duration, total_runs, total_distance: distance < 1,
 }
+
+
 # Состояния для FSM
 class LogRunStates(StatesGroup):
     waiting_for_distance = State()
     waiting_for_duration = State()
+
 
 # Начало процесса добавления тренировки
 @router.message(Command("add_run"))
 async def log_run_command(message: Message, state: FSMContext):
     await message.answer("Введите дистанцию (в километрах):")
     await state.set_state(LogRunStates.waiting_for_distance)
+
 
 # Получаем дистанцию
 @router.message(LogRunStates.waiting_for_distance)
@@ -41,6 +45,7 @@ async def process_distance(message: Message, state: FSMContext):
         await state.set_state(LogRunStates.waiting_for_duration)
     except ValueError:
         await message.answer("Пожалуйста, введите корректное число больше нуля.")
+
 
 # Получаем длительность
 @router.message(LogRunStates.waiting_for_duration)
@@ -73,11 +78,13 @@ async def process_duration(message: Message, state: FSMContext):
             f"Поздравляем! Вы получили следующие достижения:\n{', '.join(unlocked_achievements)}")
     await state.clear()
 
+
 # Валидация длительности
 def validate_duration(duration: str) -> bool:
     """Проверяет формат длительности (ЧЧ:ММ:СС)."""
     import re
     return bool(re.match(r"^\d{2}:\d{2}:\d{2}$", duration))
+
 
 def duration_in_seconds(duration):
     hours, minutes, seconds = map(int, duration.split(":"))
