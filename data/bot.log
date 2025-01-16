@@ -259,3 +259,40 @@ TypeError: handle_errors() missing 1 required positional argument: 'exception'
 2025-01-16 03:49:34,153 - __main__ - INFO - Закрытие сессии бота
 2025-01-16 03:49:34,153 - bot.handlers.reminders - INFO - Остановка планировщика задач
 2025-01-16 03:49:34,153 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-16 04:11:58,022 - __main__ - INFO - Запуск main()
+2025-01-16 04:11:58,064 - __main__ - INFO - Инициализация базы данных
+2025-01-16 04:11:58,107 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-16 04:11:58,118 - __main__ - INFO - Подключение middleware
+2025-01-16 04:11:58,118 - __main__ - INFO - Регистрация хендлеров
+2025-01-16 04:11:58,118 - bot.handlers.reminders - INFO - Запуск планировщика задач
+2025-01-16 04:11:58,135 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-16 04:11:58,135 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-16 04:11:58,135 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 04:11:58,604 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:12:27,978 - aiogram.event - INFO - Update id=785582107 is handled. Duration 406 ms by bot id=7987337779
+2025-01-16 04:12:33,321 - aiogram.event - INFO - Update id=785582108 is handled. Duration 890 ms by bot id=7987337779
+2025-01-16 04:12:38,805 - aiogram.event - INFO - Update id=785582109 is handled. Duration 234 ms by bot id=7987337779
+2025-01-16 04:13:00,654 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:13:00,654 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 04:13:00,906 - __main__ - INFO - Закрытие сессии бота
+2025-01-16 04:13:00,906 - bot.handlers.reminders - INFO - Остановка планировщика задач
+2025-01-16 04:13:00,906 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-16 04:13:05,400 - __main__ - INFO - Запуск main()
+2025-01-16 04:13:05,401 - __main__ - INFO - Инициализация базы данных
+2025-01-16 04:13:05,402 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-16 04:13:05,413 - __main__ - INFO - Подключение middleware
+2025-01-16 04:13:05,413 - __main__ - INFO - Регистрация хендлеров
+2025-01-16 04:13:05,413 - bot.handlers.reminders - INFO - Запуск планировщика задач
+2025-01-16 04:13:05,414 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-16 04:13:05,414 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-16 04:13:05,414 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 04:13:05,747 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:13:45,877 - aiogram.event - INFO - Update id=785582110 is handled. Duration 2812 ms by bot id=7987337779
+2025-01-16 04:13:47,842 - aiogram.event - INFO - Update id=785582111 is handled. Duration 234 ms by bot id=7987337779
+2025-01-16 04:14:13,869 - aiogram.event - INFO - Update id=785582112 is handled. Duration 265 ms by bot id=7987337779
+2025-01-16 04:14:17,388 - aiogram.event - INFO - Update id=785582113 is handled. Duration 219 ms by bot id=7987337779
+2025-01-16 04:14:36,553 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 04:14:36,553 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 04:14:36,811 - __main__ - INFO - Закрытие сессии бота
+2025-01-16 04:14:36,811 - bot.handlers.reminders - INFO - Остановка планировщика задач
+2025-01-16 04:14:36,811 - apscheduler.scheduler - INFO - Scheduler has been shut down
