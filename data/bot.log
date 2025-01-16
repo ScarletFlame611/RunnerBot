@@ -26,3 +26,27 @@
 2025-01-16 02:56:52,199 - __main__ - INFO - Закрытие сессии бота
 2025-01-16 02:56:52,199 - bot.handlers.reminders - INFO - Остановка планировщика задач
 2025-01-16 02:56:52,199 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2025-01-16 03:03:43,077 - __main__ - INFO - Запуск main()
+2025-01-16 03:03:43,127 - __main__ - INFO - Инициализация базы данных
+2025-01-16 03:03:43,188 - __main__ - INFO - Настройка бота и диспетчера
+2025-01-16 03:03:43,199 - __main__ - INFO - Подключение middleware
+2025-01-16 03:03:43,200 - __main__ - INFO - Регистрация хендлеров
+2025-01-16 03:03:43,200 - bot.handlers.reminders - INFO - Запуск планировщика задач
+2025-01-16 03:03:43,217 - apscheduler.scheduler - INFO - Scheduler started
+2025-01-16 03:03:43,218 - __main__ - INFO - Бот запущен! Начало polling...
+2025-01-16 03:03:43,218 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 03:03:43,867 - aiogram.dispatcher - INFO - Run polling for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 03:03:47,135 - aiogram.event - INFO - Update id=785582083 is handled. Duration 358 ms by bot id=7987337779
+2025-01-16 03:03:48,138 - bot.handlers.start - INFO - Пользователь 615014924 вызвал команду /start
+2025-01-16 03:03:48,138 - bot.handlers.start - INFO - Пользователь 615014924 уже зарегистрирован
+2025-01-16 03:03:48,262 - aiogram.event - INFO - Update id=785582084 is handled. Duration 125 ms by bot id=7987337779
+2025-01-16 03:03:51,373 - aiogram.event - INFO - Update id=785582085 is handled. Duration 2140 ms by bot id=7987337779
+2025-01-16 03:03:53,986 - aiogram.event - INFO - Update id=785582086 is handled. Duration 234 ms by bot id=7987337779
+2025-01-16 03:03:58,914 - httpx - INFO - HTTP Request: POST https://ngw.devices.sberbank.ru:9443/api/v2/oauth "HTTP/1.1 200 OK"
+2025-01-16 03:04:00,217 - httpx - INFO - HTTP Request: POST https://gigachat.devices.sberbank.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 03:04:00,342 - aiogram.event - INFO - Update id=785582087 is handled. Duration 1639 ms by bot id=7987337779
+2025-01-16 03:04:07,206 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 03:04:07,206 - aiogram.dispatcher - INFO - Polling stopped for bot @airunnerbot id=7987337779 - 'RunnerBot'
+2025-01-16 03:04:07,464 - __main__ - INFO - Закрытие сессии бота
+2025-01-16 03:04:07,464 - bot.handlers.reminders - INFO - Остановка планировщика задач
+2025-01-16 03:04:07,464 - apscheduler.scheduler - INFO - Scheduler has been shut down
