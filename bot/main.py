@@ -9,7 +9,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from bot.middlewares.registration_check import RegistrationCheckMiddleware
 from bot.handlers.start import router as start_router
 from bot.handlers import help, choose_menu, add_run, profile, errors, menu, last_trainings, \
-    compare_two, year_statistic, achievements, chat_ai, advice, random_text
+    compare_two, year_statistic, achievements, chat_ai, advice, feedback, random_text
 from bot.handlers.reminders import start_scheduler, stop_scheduler, enable_reminders, \
     disable_reminders
 
@@ -51,6 +51,7 @@ async def main():
     dp.include_router(achievements.router)
     dp.include_router(chat_ai.router)
     dp.include_router(advice.router)
+    dp.include_router(feedback.router)
     dp.include_router(random_text.router)
 
     # Регистрация команд для напоминаний

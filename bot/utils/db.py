@@ -81,6 +81,14 @@ def init_db():
     user_id INTEGER,
     reminders_enabled BOOLEAN DEFAULT FALSE
     );""")
+    cursor.execute("""CREATE TABLE IF NOT EXISTS feedback (
+    id SERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    rating INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
+    review TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    """)
     conn.commit()
     conn.close()
 
@@ -354,3 +362,13 @@ def update_user_settings(user_id, settings):
 
     conn.commit()
     conn.close()
+
+def save_feedback(user_id, rating, review):
+    connection = sqlite3.connect(DB_PATH)  # Замените на путь к вашей БД
+    cursor = connection.cursor()
+    cursor.execute(
+        "INSERT INTO feedback (user_id, rating, review) VALUES (?, ?, ?)",
+        (user_id, rating, review),
+    )
+    connection.commit()
+    connection.close()
