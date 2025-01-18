@@ -19,8 +19,11 @@ git clone <URL-репозитория>
 cd <название-папки>
 ```
 
-### 2. Установите зависимости
+### 2. Активируйте среду и установите зависимости
 ```bash
+pythion -m venv .venv
+Windows: .venv/Scripts/activate
+MacOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ### 3. Введите токены
